@@ -1,0 +1,40 @@
+.footer-link {
+  color: $dark-gray;
+  &:hover {
+    color: $primary-black;
+  }
+}
+
+.footer-category {
+  & a {
+    color: $dark-gray;
+    padding: 5px 0;
+    text-decoration: none;
+    &:hover {
+      color: $primary-black;
+    }
+  }
+}
+.footer-paycard {
+  width: 100px;
+}
+.footer-link {
+  font-weight: bold;
+  & span {
+    font-weight: normal;
+    font-size: 0.65em;
+    color: gray;
+  }
+}
+.footer-category {
+  font-size: 1.1em;
+}
+.footer-help {
+  background: $secondary-accent-color;
+  border-color: $third-accent-color;
+}
+
+.footer-links {
+  font-size: 0.8em;
+  color: $secondary-color;
+}

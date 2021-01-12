@@ -1,0 +1,33 @@
+// Your variable overrides
+
+@import "./variables.scss";
+
+$primary-color: $primary-black;
+$success-color: $primary-green;
+/*rtl:begin:ignore*/
+@import "~leaflet/dist/leaflet.css";
+/*rtl:end:ignore*/
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap-vue/src/index.scss";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/grid";
+
+// pages
+@import "./pages/cart.scss";
+
+@import "./transitions.scss";
+
+@import "./custom.scss";
+
+// components
+@import "./components/header.scss";
+@import "./components/footer.scss";
+@import "./components/autocomplete.scss";
+
+@import "./media-queries.scss";
+@import "./theming.scss";
+
+// Optional
+@import "~vue-ionicons/ionicons.scss";

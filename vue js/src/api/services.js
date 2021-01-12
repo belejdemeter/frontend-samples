@@ -1,0 +1,5 @@
+export default {
+  USER_SERVICE: process.env.VUE_APP_SERVICE_USER,
+  MARKET_SERVICE: process.env.VUE_APP_SERVICE_MARKETPLACE,
+  ORDER_SERVICE: process.env.VUE_APP_SERVICE_ORDER
+};

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- <meta name="theme-color" content="#ff591d" /> -->
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title></title>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but the application doesn't work properly without
+        JavaScript enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script> -->
+
+    <div id="app"></div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
+    <script>
+      window.i18n = {
+        /** language variables goes here */
+      };
+      window._locales = {
+        en: {
+          name: "English",
+          script: "Latn",
+          native: "English",
+          regional: "en_GB",
+          dir: "ltr",
+        },
+        ar: {
+          name: "Arabic",
+          script: "Arab",
+          native: "العربية",
+          regional: "ar_AE",
+          dir: "rtl",
+        },
+      };
+      const fallback_locale = "en_GB";
+      const fallback_dir = "ltr";
+
+      const getDefaultLocale = function () {
+        return (
+          localStorage.getItem("locale") ||
+          navigator.language ||
+          navigator.userLanguage ||
+          fallback_locale
+        );
+      };
+      let def = getDefaultLocale();
+      let currentLocale = window._locales[def.slice(0, 2)];
+      if (currentLocale) {
+        console.log("def public", def);
+        document.documentElement.setAttribute("dir", currentLocale.dir);
+        document.documentElement.lang = currentLocale.regional;
+      }
+    </script>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

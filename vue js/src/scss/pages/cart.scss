@@ -1,0 +1,148 @@
+.cart {
+  text-align: left;
+  // background: #fff;
+  padding: 10px 0;
+  &-progress {
+    width: 50%;
+  }
+  &-title {
+    font-size: 1.4em;
+  }
+  &-shipping {
+    background: #fff;
+    border: 1px solid darken($gray-bg, 10);
+    border-radius: 4px;
+  }
+  &-table {
+    // background: #fff;
+    &-overlay {
+      background: #8483831a;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      z-index: 30;
+    }
+    font-size: 0.9em;
+    width: 100%;
+    &-section {
+      padding: 10px 20px;
+      background: #fff;
+      border: 1px solid darken($gray-bg, 10);
+      border-radius: 4px;
+    }
+  }
+  &-img {
+    height: 60px;
+    width: 60px;
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    & img {
+      height: 100%;
+    }
+  }
+  &-name {
+    width: 230px;
+  }
+  & input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  & input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  &-count {
+    width: 30px;
+    &-btn {
+      background: #fff;
+      border: none;
+      color: #000;
+      margin: 0 5px;
+      width: 30px;
+      height: 30px;
+      font-size: 0.8em;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+  }
+  &-sidebar {
+    margin-left: 30px;
+    width: 50%;
+    font-size: 1em;
+    & h5 {
+      font-size: 1.1em;
+    }
+  }
+  &-coupone {
+    font-size: 0.9em;
+  }
+  &-price {
+    width: 25%;
+  }
+}
+.cart {
+  & .progress {
+    padding: 0 !important;
+  }
+  &-map-location {
+    background: #eeeeee;
+    border-radius: 6px;
+    padding: 5px;
+    text-align: left;
+  }
+}
+
+.checkoutmodal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 40;
+  overflow-y: scroll;
+  &-applink {
+    display: none;
+    margin-bottom: 20px;
+  }
+  &-qr {
+    width: 100%;
+  }
+  &-text {
+  }
+  &-tip {
+    color: $primary-black;
+    font-size: 0.5em;
+  }
+  &-content {
+    background: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    // min-height: 90%;
+    width: 300px;
+    font-size: 3em;
+    color: $primary-green;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  &-title {
+    color: $primary-green;
+    font-size: 0.7em;
+  }
+}
+.cart-step {
+  cursor: pointer;
+  color: $secondary-text;
+}

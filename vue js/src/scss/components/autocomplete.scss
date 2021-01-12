@@ -1,0 +1,22 @@
+.autocomplete {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 100%;
+  list-style: none;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  &__item {
+    padding: 5px;
+    cursor: pointer;
+    &:hover {
+      color: #fff;
+      background: $accent-color;
+    }
+  }
+}
